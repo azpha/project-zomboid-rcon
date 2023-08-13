@@ -14,7 +14,7 @@ import {ZomboidCommands, ZomboidRconClient} from 'project-zomboid-rcon'
 
 ## Example
 ```javascript
-import * as Zomboid from 'project-zomboid-rcon'
+import {ZomboidCommands, ZomboidRconClient} from 'project-zomboid-rcon'
 
 // Initialize the client
 const zomboid = new Zomboid({
@@ -28,10 +28,10 @@ zomboid.connect()
 
 // All valid commands are provided in the zomboid.ZomboidCommands enum
 // Run commands using the .send() function on the zomboid class
-zomboid.send(zomboid.ZomboidCommands.GRANT_ADMIN, "Alex") // granting admin to Alex
+zomboid.send(ZomboidCommands.GRANT_ADMIN, "Alex") // granting admin to Alex
 
 // More than 1 argument? Supply in the same string!
-zomboid.send(zomboid.ZomboidCommands.ADD_ITEM, "Alex Base.Tshirt_CamoUrban")
+zomboid.send(ZomboidCommands.ADD_ITEM, "Alex Base.Tshirt_CamoUrban")
 
 // Disconnect using the .disconnect() function
 zomboid.disconnect()
