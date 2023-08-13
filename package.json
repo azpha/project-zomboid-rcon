@@ -1,0 +1,32 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.4.10",
+    "typescript": "^5.1.6"
+  },
+  "name": "project-zomboid-rcon",
+  "description": "Utilize RCON capabilities through NodeJS - useful for Discord bots, status monitoring etc",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsc",
+    "prepare": "npm run dev"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azpha/project-zomboid-rcon.git"
+  },
+  "keywords": [
+    "projectzomboid",
+    "zomboid",
+    "rcon"
+  ],
+  "author": "Alex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azpha/project-zomboid-rcon/issues"
+  },
+  "homepage": "https://github.com/azpha/project-zomboid-rcon#readme"
+}
